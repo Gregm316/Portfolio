@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  margin: 1%;
+  background-image: url("../images/portfolio-background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.main-header h1 {
+  margin: 15px 0 0 40px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20%;
+  font-size: 250%;
+  font-weight: bolder;
+}
+
+.main-header nav ul {
+  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  list-style-type: none;
+  text-indent: 60px;
+  font-size: x-large;
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  border: 3px black solid;
+  border-radius: 10%;
+}
+
+.info {
+  flex: 1 0 0;
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+  border-style: solid;
+  margin: 10px;
+}
+
+.info header {
+  font-size: 200%;
+}
+
+.info p {
+  font-size: 100%;
+  font-weight: 100;
+}
+
+.info img {
+  width: 85%;
+  height: auto;
+}
+
+.info:hover {
+  border: 5px black solid;
+  background-color: gray;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+footer h3 {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+footer ul {
+  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  list-style-type: none;
+  text-indent: 30px;
+}
+
+@media screen and (max-width: 781px) {
+  .main-header,
+  .main-header ul,
+  main,
+  footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
